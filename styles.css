@@ -62,6 +62,7 @@ div.credit a {
 }
 
 div.form-container {
+    overflow: auto;
     flex: 2;
 }
 
