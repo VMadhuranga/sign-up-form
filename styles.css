@@ -118,6 +118,25 @@ div.form input:focus {
     box-shadow: 1px 1px 10px lightgray;
 }
 
+div.form input:focus:invalid {
+    border: 2px solid red;
+}
+
+div.form input[type="password"] {
+    position: relative;
+}
+
+div.form input[type="password"] + span {
+    display: block;
+    position: absolute;
+    color: red;
+    font-size: 0.9rem;
+}
+
+div.form input[id="password"]:focus:invalid + span::after {
+    content: "Password should be minimum 5 characters";
+}
+
 div.account-action {
     padding: 2rem;
     font-size: 1.2rem;
